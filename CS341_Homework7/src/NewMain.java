@@ -40,7 +40,7 @@ public class NewMain {
 		readFile();
 		lineCounter();
 		System.out.println();
-		keyCount = sortNumerical(keyCount);
+		 keyCount = sortNumerical(keyCount);
 		// stopping stopwatch
 		sw.stop();
 		System.out.println("Sorted Java keywords by number of occurances in file: " + keyCount.toString());
