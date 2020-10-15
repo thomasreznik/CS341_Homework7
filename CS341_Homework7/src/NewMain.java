@@ -36,11 +36,10 @@ public class NewMain {
 		Stopwatch sw = new Stopwatch();
 		// starting stopwatch
 		sw.start();
-		CountLetters();
 		readFile();
 		lineCounter();
 		System.out.println();
-		 keyCount = sortNumerical(keyCount);
+		keyCount = sortNumerical(keyCount);
 		// stopping stopwatch
 		sw.stop();
 		System.out.println("Sorted Java keywords by number of occurances in file: " + keyCount.toString());
@@ -59,28 +58,7 @@ public class NewMain {
 
 	// This method puts the letters in the valueHashMap
 
-	public static void CountLetters() {
-
-		for (int i = 0; i < keywordArr.length; i++) {
-			char first = keywordArr[i].charAt(0);
-			char last = keywordArr[i].charAt(keywordArr[i].length() - 1);
-
-// to check if map has value of first 
-			if (!valueHashMap.containsKey(first)) {
-				valueHashMap.put(first, 1);
-			} else {
-				valueHashMap.put(first, valueHashMap.get(first) + 1);
-			}
-
-// to check if map has values of last
-
-			if (!valueHashMap.containsKey(last)) {
-				valueHashMap.put(last, 1);
-			} else {
-				valueHashMap.put(last, valueHashMap.get(last) + 1);
-			}
-
-		}
+	public static void sortNumerical() {
 
 // sort the list by highest values
 
